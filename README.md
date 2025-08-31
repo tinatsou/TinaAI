@@ -59,15 +59,25 @@ Common flags:
 **Project structure (evolving)**
 
 TinaAI/
+
 ├─ RAG/                 # RAG starter (ingest, index, retrieve, answer)
+
 │  ├─ ingest.py
+
 │  ├─ index.py
+
 │  ├─ retriever.py
+
 │  ├─ app.py
+
 │  └─ ...
+
 ├─ data/                # (gitignored) sample documents
+
 ├─ requirements.txt
+
 ├─ README.md
+
 └─ ...
 
 **Configuration**
