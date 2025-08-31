@@ -1,0 +1,151 @@
+id,city,name,neighborhood,nightly_price_usd,review_score,walk_score,notes
+H0001,New York City,The Plaza,Historic District,263,4.0,86,Close to transit
+H0002,New York City,"The Standard, High Line",Waterfront,146,3.8,86,Great nightlife
+H0003,New York City,"The Langham, New York",Arts District,123,3.8,77,Good breakfast
+H0004,New York City,The Pierre,Waterfront,285,4.1,69,Near museums
+H0005,New York City,The Bowery Hotel,Near Transit,117,4.0,80,Good breakfast
+H0006,New York City,The Peninsula New York,Waterfront,256,4.7,82,Good breakfast
+H0007,New York City,Conrad New York Downtown,Near Park,277,4.6,95,Beach access
+H0008,New York City,The William Vale,Arts District,325,4.0,64,Great nightlife
+H0009,New York City,Arlo SoHo,Waterfront,194,4.5,87,Close to transit
+H0010,New York City,The Beekman,Downtown,365,4.0,94,Quiet area
+H0011,Seattle,The Edgewater,Near Park,380,4.3,68,Quiet area
+H0012,Seattle,Kimpton Palladian,Waterfront,166,4.8,88,Good breakfast
+H0013,Seattle,Thompson Seattle,Downtown,216,3.7,60,Good breakfast
+H0014,Seattle,Hotel Theodore,University,173,4.1,69,Quiet area
+H0015,Seattle,The Charter Hotel,Near Park,340,4.7,60,Quiet area
+H0016,Seattle,Fairmont Olympic,Arts District,250,4.3,91,Close to transit
+H0017,Seattle,Graduate Seattle,Arts District,318,4.7,99,Near museums
+H0018,Seattle,Hotel Max,Historic District,383,4.4,93,Great nightlife
+H0019,Seattle,Hotel Ändra,Downtown,345,4.3,95,Quiet area
+H0020,Seattle,Hyatt at Olive 8,Downtown,267,4.2,85,Great nightlife
+H0021,San Francisco,Fairmont San Francisco,Downtown,347,3.7,67,Near museums
+H0022,San Francisco,Hotel Nikko,Waterfront,140,4.3,80,Quiet area
+H0023,San Francisco,The Westin St. Francis,Financial District,324,4.4,88,Beach access
+H0024,San Francisco,Palace Hotel,Near Transit,391,4.0,98,Beach access
+H0025,San Francisco,Argonaut Hotel,Arts District,344,4.9,73,Near museums
+H0026,San Francisco,Hotel Zoe Fisherman's Wharf,Waterfront,306,3.8,82,Good breakfast
+H0027,San Francisco,The Clift Royal Sonesta,Historic District,372,4.1,73,Quiet area
+H0028,San Francisco,Hyatt Regency Embarcadero,University,218,3.9,61,Near museums
+H0029,San Francisco,Hotel Zeppelin,Financial District,241,3.7,93,Near museums
+H0030,San Francisco,Hotel Vitale,Financial District,382,4.1,79,Good breakfast
+H0031,New Orleans,Hotel Monteleone,Historic District,336,4.2,78,Near museums
+H0032,New Orleans,The Roosevelt New Orleans,Downtown,144,4.2,99,Great nightlife
+H0033,New Orleans,"The Ritz-Carlton, New Orleans",Historic District,420,4.7,61,Good breakfast
+H0034,New Orleans,The Pontchartrain,Near Transit,184,3.9,83,Good breakfast
+H0035,New Orleans,Ace Hotel New Orleans,Waterfront,263,3.6,82,Great nightlife
+H0036,New Orleans,The Eliza Jane,Near Park,401,4.6,81,Great nightlife
+H0037,New Orleans,The Old No. 77 Hotel,Arts District,251,3.8,61,Beach access
+H0038,New Orleans,Omni Royal Orleans,Waterfront,331,4.3,80,Quiet area
+H0039,New Orleans,Four Seasons Hotel New Orleans,Waterfront,96,4.1,86,Beach access
+H0040,New Orleans,Bienville House,Financial District,264,3.9,61,Close to transit
+H0041,Orlando,Disney's Contemporary Resort,Financial District,382,4.4,64,Beach access
+H0042,Orlando,Disney's Grand Floridian,Near Park,389,3.9,61,Great nightlife
+H0043,Orlando,Walt Disney World Dolphin,Near Park,107,4.8,76,Close to transit
+H0044,Orlando,Universal's Cabana Bay Beach Resort,Arts District,120,4.4,75,Beach access
+H0045,Orlando,Rosen Shingle Creek,Near Transit,143,4.4,81,Close to transit
+H0046,Orlando,Hyatt Regency Orlando,Financial District,273,3.7,64,Good breakfast
+H0047,Orlando,Loews Sapphire Falls,Near Transit,325,4.6,71,Good breakfast
+H0048,Orlando,Hilton Orlando Bonnet Creek,Financial District,360,4.0,90,Good breakfast
+H0049,Orlando,JW Marriott Orlando Grande Lakes,Financial District,304,4.4,96,Quiet area
+H0050,Orlando,The Ritz-Carlton Orlando,Waterfront,107,4.3,96,Close to transit
+H0051,Miami,Fontainebleau Miami Beach,Historic District,319,4.0,86,Near museums
+H0052,Miami,The Betsy South Beach,Financial District,314,3.9,65,Good breakfast
+H0053,Miami,Loews Miami Beach Hotel,Historic District,160,3.9,97,Good breakfast
+H0054,Miami,1 Hotel South Beach,Historic District,97,4.9,61,Beach access
+H0055,Miami,EAST Miami,Arts District,258,3.6,87,Great nightlife
+H0056,Miami,Kimpton EPIC Hotel,University,218,4.4,88,Quiet area
+H0057,Miami,The Confidante,Waterfront,212,3.7,74,Close to transit
+H0058,Miami,Novotel Miami Brickell,Near Transit,394,4.9,80,Near museums
+H0059,Miami,The Biltmore Hotel,Arts District,338,4.8,85,Near museums
+H0060,Miami,W South Beach,Historic District,260,4.1,88,Quiet area
+H0061,Boston,Omni Parker House,Waterfront,416,3.7,95,Near museums
+H0062,Boston,"The Liberty, a Luxury Collection Hotel",Waterfront,132,4.6,83,Quiet area
+H0063,Boston,"The Langham, Boston",Waterfront,408,4.5,86,Near museums
+H0064,Boston,Fairmont Copley Plaza,Near Transit,288,4.5,99,Near museums
+H0065,Boston,Boston Park Plaza,Near Transit,190,4.8,78,Beach access
+H0066,Boston,The Godfrey Hotel Boston,Waterfront,402,4.9,95,Quiet area
+H0067,Boston,Seaport Hotel,Arts District,285,3.9,75,Quiet area
+H0068,Boston,Encore Boston Harbor,Near Transit,295,4.3,91,Near museums
+H0069,Boston,Revere Hotel Boston Common,Historic District,199,3.9,81,Close to transit
+H0070,Boston,Hilton Boston Park Plaza,Waterfront,251,3.8,71,Good breakfast
+H0071,Chicago,"The Langham, Chicago",Near Transit,417,4.9,89,Close to transit
+H0072,Chicago,Palmer House Hilton,Near Park,131,4.4,93,Near museums
+H0073,Chicago,The Drake,University,108,4.9,68,Quiet area
+H0074,Chicago,Ace Hotel Chicago,Arts District,306,4.0,73,Great nightlife
+H0075,Chicago,The Peninsula Chicago,University,372,4.8,72,Close to transit
+H0076,Chicago,Kimpton Gray Hotel,University,259,4.6,92,Close to transit
+H0077,Chicago,Hyatt Regency Chicago,Downtown,248,3.6,66,Close to transit
+H0078,Chicago,Hotel Lincoln,Near Park,363,4.7,88,Great nightlife
+H0079,Chicago,Radisson Blu Aqua,Downtown,420,4.6,88,Quiet area
+H0080,Chicago,Loews Chicago Hotel,Downtown,175,4.7,89,Great nightlife
+H0081,Los Angeles,Chateau Marmont,Financial District,367,4.2,78,Great nightlife
+H0082,Los Angeles,The Beverly Hills Hotel,Arts District,104,3.7,64,Near museums
+H0083,Los Angeles,The LINE LA,Downtown,363,4.1,67,Good breakfast
+H0084,Los Angeles,Freehand Los Angeles,Near Transit,141,4.6,67,Great nightlife
+H0085,Los Angeles,"The Hoxton, Downtown LA",Downtown,294,3.7,94,Good breakfast
+H0086,Los Angeles,Hotel Figueroa,University,297,4.7,67,Good breakfast
+H0087,Los Angeles,The Garland,Arts District,406,3.6,93,Near museums
+H0088,Los Angeles,The West Hollywood EDITION,Historic District,366,4.6,60,Close to transit
+H0089,Los Angeles,1 Hotel West Hollywood,Historic District,214,3.9,80,Great nightlife
+H0090,Los Angeles,The Roosevelt,Near Park,125,4.0,68,Beach access
+H0091,Las Vegas,Bellagio,Near Transit,196,4.5,93,Close to transit
+H0092,Las Vegas,The Venetian,University,267,4.9,73,Good breakfast
+H0093,Las Vegas,ARIA Resort & Casino,Near Transit,213,4.0,81,Good breakfast
+H0094,Las Vegas,Wynn Las Vegas,Near Park,388,3.9,96,Near museums
+H0095,Las Vegas,Caesars Palace,Waterfront,141,3.7,79,Beach access
+H0096,Las Vegas,The Cosmopolitan of Las Vegas,Waterfront,343,3.7,65,Good breakfast
+H0097,Las Vegas,MGM Grand,Downtown,200,3.6,68,Beach access
+H0098,Las Vegas,Park MGM,University,412,4.3,85,Quiet area
+H0099,Las Vegas,The Palazzo,Financial District,271,3.8,81,Good breakfast
+H0100,Las Vegas,The Mirage,Near Transit,183,4.2,92,Near museums
+H0101,Austin,The Driskill,Downtown,249,3.9,74,Near museums
+H0102,Austin,Fairmont Austin,Financial District,390,4.5,97,Beach access
+H0103,Austin,Kimpton Hotel Van Zandt,Arts District,95,4.6,94,Good breakfast
+H0104,Austin,South Congress Hotel,Historic District,132,3.7,74,Good breakfast
+H0105,Austin,Hotel Ella,Historic District,105,3.8,70,Close to transit
+H0106,Austin,Austin Proper Hotel,Financial District,282,4.1,73,Near museums
+H0107,Austin,JW Marriott Austin,Downtown,228,4.5,80,Quiet area
+H0108,Austin,The LINE Austin,Near Park,229,4.1,80,Quiet area
+H0109,Austin,Hotel Saint Cecilia,Downtown,353,4.7,98,Near museums
+H0110,Austin,Hotel ZaZa Austin,Downtown,214,3.7,90,Near museums
+H0111,Denver,The Brown Palace Hotel,University,342,4.8,67,Beach access
+H0112,Denver,The Crawford Hotel,Near Transit,382,4.9,60,Great nightlife
+H0113,Denver,Hotel Teatro,Historic District,411,4.3,72,Good breakfast
+H0114,Denver,The Maven Hotel,Near Park,366,3.7,61,Quiet area
+H0115,Denver,The Oxford Hotel,Financial District,133,4.8,67,Quiet area
+H0116,Denver,Kimpton Hotel Born,Near Transit,272,3.8,96,Near museums
+H0117,Denver,The Rally Hotel,Financial District,196,3.9,96,Close to transit
+H0118,Denver,"Halcyon, a hotel in Cherry Creek",Near Park,214,3.9,86,Close to transit
+H0119,Denver,The Jacquard,Near Park,366,3.8,68,Great nightlife
+H0120,Denver,Four Seasons Denver,Historic District,167,4.3,73,Near museums
+H0121,Portland,The Nines,Historic District,200,3.9,69,Near museums
+H0122,Portland,Dossier Hotel,Waterfront,335,4.1,80,Good breakfast
+H0123,Portland,Hotel Lucia,Waterfront,207,3.7,93,Close to transit
+H0124,Portland,Jupiter NEXT,Downtown,143,4.3,98,Close to transit
+H0125,Portland,Sentinel,Waterfront,284,3.9,97,Near museums
+H0126,Portland,The Benson Portland,Arts District,286,4.8,85,Beach access
+H0127,Portland,Hotel deLuxe,Near Park,381,4.3,70,Good breakfast
+H0128,Portland,Kimpton RiverPlace,Downtown,248,4.6,73,Quiet area
+H0129,Portland,Hyatt Regency Portland,Near Park,320,4.8,87,Near museums
+H0130,Portland,Canopy by Hilton Pearl District,University,131,4.2,87,Near museums
+H0131,Philadelphia,The Rittenhouse,Financial District,249,4.9,87,Good breakfast
+H0132,Philadelphia,Kimpton Hotel Monaco Philadelphia,Financial District,348,4.5,62,Near museums
+H0133,Philadelphia,The Logan Philadelphia,Near Transit,278,4.3,90,Quiet area
+H0134,Philadelphia,Loews Philadelphia Hotel,Financial District,247,3.7,90,Close to transit
+H0135,Philadelphia,The Bellevue Hotel,Waterfront,182,4.2,82,Near museums
+H0136,Philadelphia,AKA Rittenhouse Square,Financial District,366,4.0,99,Quiet area
+H0137,Philadelphia,Penn's View Hotel,Near Transit,104,4.4,65,Great nightlife
+H0138,Philadelphia,The Study at University City,Financial District,171,4.1,80,Great nightlife
+H0139,Philadelphia,Sonesta Philadelphia,Near Park,347,4.4,60,Quiet area
+H0140,Philadelphia,The Notary Hotel,Historic District,200,4.8,74,Near museums
+H0141,San Diego,Hotel del Coronado,Arts District,292,3.8,96,Near museums
+H0142,San Diego,Pendry San Diego,Downtown,398,4.4,75,Great nightlife
+H0143,San Diego,Hotel Indigo San Diego,Downtown,168,4.3,97,Beach access
+H0144,San Diego,The US Grant,Waterfront,252,4.1,91,Great nightlife
+H0145,San Diego,Kimpton Alma San Diego,Near Park,353,4.1,77,Beach access
+H0146,San Diego,Manchester Grand Hyatt,University,208,4.2,71,Near museums
+H0147,San Diego,Omni San Diego Hotel,Waterfront,202,4.2,64,Near museums
+H0148,San Diego,La Valencia Hotel,Financial District,131,3.8,66,Great nightlife
+H0149,San Diego,Fairmont Grand Del Mar,Near Transit,209,4.2,90,Great nightlife
+H0150,San Diego,The Guild Hotel,Financial District,172,4.8,68,Close to transit
