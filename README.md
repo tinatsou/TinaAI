@@ -39,16 +39,23 @@ This notebook is a template rather than a polished product—feel free to modify
 **1. Clone the repository:**
 
 git clone https://github.com/tinatsou/TinaAI.git
+
 cd TinaAI/Travel\ planner
 
 **2. Create a virtual environment and install dependencies.** The travel agent has its own requirements.txt file. Use Python 3.9+.
+
 python -m venv .venv
+
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
 pip install -U pip
+
 pip install -r requirements.txt
 
 **3. Set your API keys.** Some notebooks expect environment variables to be defined. At minimum you’ll need an OPENAI_API_KEY for LLM calls. Create a .env file or export variables like:
+
 export OPENAI_API_KEY=sk-...  # your OpenAI key
+
 export WEATHER_API_KEY=...    # optional if you replace dummy functions with real calls
 
 **4. Run the notebooks.** Launch Jupyter and open any of the notebooks in Travel planner/:
