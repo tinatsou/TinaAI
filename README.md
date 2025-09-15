@@ -77,11 +77,11 @@ TinaAI/
     
     └── data/
     
-        ├── activities.csv    # activity catalogue (city, theme, duration, cost…):contentReference[oaicite:12]{index=12}
+        ├── activities.csv    # activity catalogue (city, theme, duration, cost…)
         
-        ├── flights.csv       # flights (origin, destination, airline, price…):contentReference[oaicite:13]{index=13}
+        ├── flights.csv       # flights (origin, destination, airline, price…)
         
-        └── hotels.csv        # hotels (city, neighbourhood, price, score…):contentReference[oaicite:14]{index=14}
+        └── hotels.csv        # hotels (city, neighbourhood, price, score…)
 
 **Contributing**
 
