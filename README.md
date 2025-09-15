@@ -64,14 +64,23 @@ These notebooks are self‑contained; there is no CLI yet, but you can export fu
 **Repository layout**
 
 TinaAI/
+
 └── Travel planner/
+
     ├── agent.ipynb           # demo of tool calling (weather + reviews)
+    
     ├── rag.ipynb             # retrieval and ranking demonstrations
+    
     ├── complete_agent.ipynb  # full weather‑aware planner
+    
     ├── requirements.txt      # dependencies for travel‑planner notebooks
+    
     └── data/
+    
         ├── activities.csv    # activity catalogue (city, theme, duration, cost…):contentReference[oaicite:12]{index=12}
+        
         ├── flights.csv       # flights (origin, destination, airline, price…):contentReference[oaicite:13]{index=13}
+        
         └── hotels.csv        # hotels (city, neighbourhood, price, score…):contentReference[oaicite:14]{index=14}
 
 **Contributing**
