@@ -1,103 +1,99 @@
-**TinaAI – Travel‑Planning Agent Demo**
+## TinaAI – AI  Header
 
-**TinaAI** is a sandbox for experimenting with retrieval‑augmented generation (RAG) and agentic tool use. The current code base centers on an end‑to‑end travel‑planning agent that combines structured data, weather APIs and large language models (LLMs) to build coherent itineraries. It grew out of Tina Tsou’s exploration of modular AI workflows and is designed to be easy to remix and extend.
+**TinaAI** is a sandbox for experimenting with different AI workflows, including retrieval‑augmented generation (RAG), agentic tool use, interactive storytelling and simple productivity tools. Each sub‑directory in this repository contains a self‑contained demo that showcases how large language models can be combined with data and functions to produce useful outputs.
 
-**What’s inside**
+## Projects
 
-**Data‑driven travel recommendations**
+* **Travel planner** – An end‑to‑end travel‑planning agent that combines structured data, weather APIs and an LLM to build coherent, weather‑aware itineraries. See [Travel planner/](Travel%20planner/) for notebooks and details.
+* **ChatGPT-based storytelling** – A choose‑your‑own‑adventure‑style story project built with ChatGPT. Readers follow a team of heroes through a fantasy world and make decisions that lead to different story paths. See [chatgpt_storytelling/](chatgpt_storytelling/) for the interactive story and write‑up.
+* **Personal expense tracker** – A simple command‑line tool to log daily expenses, set a monthly budget and track spending against it. Expenses are persisted to a CSV file. See [expense_tracker/personal_expense_tracker.py](expense_tracker/personal_expense_tracker.py) for details and usage.
 
-The travel planner ships with three simple CSV datasets: flights, hotels and activities. Each dataset has enough attributes to build a meaningful itinerary. For example, the activities.csv file lists the id, city, name, theme (e.g. sports, food, nightlife), duration, cost and other notes. flights.csv records the origin, destination, airline, price, departure/arrival time and an on‑time rate. hotels.csv contains the city, hotel name, neighbourhood, nightly price, review score and walk score. These tabular files live under Travel planner/data/ and can be easily swapped for your own data.
+---
 
-**Retrieval and ranking**
+## Travel planner
 
-The Travel planner/rag.ipynb notebook demonstrates how to retrieve the most relevant activities for a query using multiple ranking strategies. It implements simple exact‑keyword matching, BM25 lexical ranking and semantic similarity via sentence transformers. These functions help narrow the large activity set down to a handful of candidates before generating an itinerary. The same notebook introduces a trip_planer function that combines the filtered flights, hotels and activities with a prompt template for an LLM. 
+This was the original demo in the repository and remains the most fully fledged example. It shows how to build a RAG‑based agent that retrieves relevant activities, flights and hotels and calls external functions (e.g. weather) when generating a trip plan.
 
-**Tool calling with LLMs**
+### Data‑driven travel recommendations
 
-Travel planner/agent.ipynb shows how to call custom functions from an LLM using OpenAI’s tool‑calling interface. Two simple Python functions are defined: get_weather, which returns a dummy current temperature for a location, and get_review, which returns placeholder reviews for a place. The notebook registers these functions in a tool schema and demonstrates how the model decides when to call them. This pattern can be extended with real API calls (e.g. to a weather service or Yelp) to enrich responses.
+The travel planner ships with three simple CSV datasets: **flights**, **hotels** and **activities**. Each dataset has enough attributes to build a meaningful itinerary. For example, the `activities.csv` file lists the id, city, name, theme (e.g. outdoors, food, nightlife), duration, cost and other notes. `flights.csv` records the origin, destination, airline, price, departure/arrival time and an approximate distance. `hotels.csv` contains the city, hotel name, neighbourhood, nightly price, review score and walk score. These tabular files live under `Travel planner/data/` and can be easily swapped for your own data.
 
-**Weather‑aware agent**
+### Retrieval and ranking
 
-The most complete example is in Travel planner/complete_agent.ipynb. It defines a plan_trip method that generates a weather‑aware itinerary. The docstring explains the inputs (origin, destination, dates, budget and activity themes) and notes that it returns a formatted markdown plan. 
+The `Travel planner/rag.ipynb` notebook demonstrates how to retrieve the most relevant activities for a query using multiple ranking strategies. It implements simple exact‑keyword matching, BM25 lexical ranking and semantic similarity via sentence transformers. These functions help narrow the large activity set down to a handful of candidates before generating an itinerary. The same notebook introduces a `trip_planner` function that combines the filtered flights, hotels and activities with a prompt template for an LLM.
 
-**Internally the agent:**
+### Tool calling with large language models
 
-1. Fetches weather data from Open‑Meteo for the given dates, using either forecast or historical endpoints.
+The notebook `Travel planner/agent.ipynb` shows how to wrap the retrieval logic in a tool and invoke it from an LLM. It uses the OpenAI function‑calling API to let the model decide when to call `trip_planner` and how to use the returned results. The agent then produces a formatted itinerary that includes flights, hotel and daily activities. This example highlights how LLMs can orchestrate data retrieval and reasoning via external tools.
 
-2. Analyses the data to determine daily conditions and classify days as suitable for outdoor or indoor activities.
+### Weather‑aware agent
 
-3. Retrieves flights, hotels and activities filtered by the origin, destination and chosen themes.
+In `Travel planner/weather_agent.ipynb` the itinerary is further improved by consulting real‑time weather data. The notebook uses the geographical coordinates for each activity and queries a weather API for the forecast on the target dates. It then adjusts the plan—swapping indoor and outdoor activities, redistributing events across days and suggesting alternative locations—to ensure that travellers have the best possible experience.
 
-4. Builds a detailed system prompt with planning guidelines that prioritise weather‑appropriate activities, balances cost and quality, and leaves buffer time between flights and activities.
+## ChatGPT‑based storytelling
 
-5. Calls an LLM (via the OpenAI API) with the assembled context to generate a day‑by‑day itinerary in markdown.
+The `chatgpt_storytelling` folder contains a choose‑your‑own‑adventure narrative set in the fantasy realm of **Eldoria**. A party of heroes—**Aria** the ranger, **Finn** the mage and **Nyx** the rogue—explore enchanted forests, ancient ruins and treacherous dungeons. At key junctures the reader must choose between different paths, and each decision leads to a unique story branch. The interactive story is written entirely by ChatGPT without any additional code.
 
-This notebook is a template rather than a polished product—feel free to modify the prompt, ranking logic or data sources to suit your needs.
+Important files include:
+* `interactive_story.md` – The markdown version of the story with branching options.
+* `interactive_story.docx` – A Word document for easy reading and printing.
+* `images/eldoria.png` – An illustration of the Eldoria landscape.
+* `README.md` – A short write‑up describing the characters and world.
 
-**Getting started**
+To experience the story, open `interactive_story.md` and follow the numbered choices. Feel free to explore different branches to see how the heroes’ journey unfolds.
 
-**1. Clone the repository:**
+## Personal expense tracker
 
+The `expense_tracker` directory contains a simple command‑line program (`personal_expense_tracker.py`) for managing personal finances. The tracker supports:
+
+* Logging a new expense by entering the date, category, amount and an optional description.
+* Viewing a list of all recorded expenses.
+* Setting a monthly budget and tracking spending against it.
+* Saving expenses to, and loading from, a CSV file so data persists across sessions.
+
+The script uses Python’s standard library (`csv`, `datetime`) so there are no external dependencies. To run it, execute:
+
+```bash
+python personal_expense_tracker.py
+```
+
+You’ll be presented with a menu to add expenses, view expenses or set your budget. Data is stored in `expenses.csv` in the same folder.
+
+## Getting started
+
+Each project lives in its own sub‑directory. Clone the repository and navigate into the folder of interest to explore further:
+
+```bash
 git clone https://github.com/tinatsou/TinaAI.git
+cd TinaAI/Travel\ planner    # or chatgpt_storytelling, expense_tracker
+```
 
-cd TinaAI/Travel\ planner
+### Travel planner setup
 
-**2. Create a virtual environment and install dependencies.** The travel agent has its own requirements.txt file. Use Python 3.9+.
+The travel planner notebooks require Python 3.9+ and the following packages: `pandas`, `numpy`, `scikit‑learn`, `sentence‑transformers`, `openai`, `requests` and `matplotlib`. You can install them using:
 
-python -m venv .venv
-
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-pip install -U pip
-
+```bash
 pip install -r requirements.txt
+```
 
-**3. Set your API keys.** Some notebooks expect environment variables to be defined. At minimum you’ll need an OPENAI_API_KEY for LLM calls. Create a .env file or export variables like:
+Run the notebooks in Jupyter or VS Code and follow the instructions in each cell.
 
-export OPENAI_API_KEY=sk-...  # your OpenAI key
+### Storytelling setup
 
-export WEATHER_API_KEY=...    # optional if you replace dummy functions with real calls
+The storytelling project doesn’t require any special setup—just open the markdown or Word file and read along. If you want to generate your own choose‑your‑own‑adventure stories, you can adapt the structure described in the README.
 
-**4. Run the notebooks.** Launch Jupyter and open any of the notebooks in Travel planner/:
+### Expense tracker setup
 
-rag.ipynb – play with exact, BM25 and embedding ranking on the activities dataset. Try modifying queries or experimenting with your own data.
+The expense tracker runs on Python’s standard library only. Run the script with Python 3.9+ and follow the on‑screen prompts to log expenses and manage your budget.
 
-agent.ipynb – see how an LLM can call Python functions like get_weather and get_review
+## Contributing
 
-complete_agent.ipynb – generate a weather‑aware travel itinerary end‑to‑end. Change the origin, destination, dates, budget and themes to see different plans.
+Contributions are welcome! Feel free to fork the repository and submit pull requests. For bug reports or feature requests, please open an issue describing the problem and your proposed solution. Please make sure to follow the existing code style and include tests where appropriate.
 
-These notebooks are self‑contained; there is no CLI yet, but you can export functions into scripts.
+## License
 
-**Repository layout**
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-TinaAI/
+## Acknowledgements
 
-└── Travel planner/
-
-    ├── agent.ipynb           # demo of tool calling (weather + reviews)
-    
-    ├── rag.ipynb             # retrieval and ranking demonstrations
-    
-    ├── complete_agent.ipynb  # full weather‑aware planner
-    
-    ├── requirements.txt      # dependencies for travel‑planner notebooks
-    
-    └── data/
-    
-        ├── activities.csv    # activity catalogue (city, theme, duration, cost…)
-        
-        ├── flights.csv       # flights (origin, destination, airline, price…)
-        
-        └── hotels.csv        # hotels (city, neighbourhood, price, score…)
-
-**Contributing**
-
-Pull requests and issues are welcome! Please open an issue to discuss significant changes, keep modules small and testable, and update docstrings or notebooks when you add features. Tests are not yet comprehensive, but adding minimal checks will help others build upon your work.
-
-**License**
-
-This project is released under the MIT License. See the LICENSE file for details.
-
-**Acknowledgements**
-
-This repo was inspired by the vibrant RAG and agent ecosystems. The travel‑planner agent is intentionally simple—it uses dummy reviews and a toy dataset—but it demonstrates how to combine retrieval, tool calls and weather analysis to craft useful outputs. Built with ❤️ by Tina Tsou.
+Thanks to the developers of the open‑source libraries used in these demos, including pandas, scikit‑learn, sentence‑transformers and OpenAI’s APIs. The choose‑your‑own‑adventure story was created using ChatGPT.
