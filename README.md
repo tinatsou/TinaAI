@@ -1,12 +1,12 @@
-## TinaAI – AI  Header
+## TinaAI: AI  Header
 
-**TinaAI** is a sandbox for experimenting with different AI workflows, including retrieval‑augmented generation (RAG), agentic tool use, interactive storytelling and simple productivity tools. Each sub‑directory in this repository contains a self‑contained demo that showcases how large language models can be combined with data and functions to produce useful outputs.
+**TinaAI** is a sandbox for experimenting with different AI workflows, including retrieval augmented generation (RAG), agentic tool use, interactive storytelling and simple productivity tools. Each sub directory in this repository contains a self contained demo that showcases how large language models can be combined with data and functions to produce useful outputs.
 
 ## Projects
 
-* **Travel planner** – An end‑to‑end travel‑planning agent that combines structured data, weather APIs and an LLM to build coherent, weather‑aware itineraries. See [Travel planner/](Travel%20planner/) for notebooks and details.
-* **ChatGPT-based storytelling** – A choose‑your‑own‑adventure‑style story project built with ChatGPT. Readers follow a team of heroes through a fantasy world and make decisions that lead to different story paths. See [chatgpt_storytelling/](chatgpt_storytelling/) for the interactive story and write‑up.
-* **Personal expense tracker** – A simple command‑line tool to log daily expenses, set a monthly budget and track spending against it. Expenses are persisted to a CSV file. See [expense_tracker/personal_expense_tracker.py](expense_tracker/personal_expense_tracker.py) for details and usage.
+* **Travel planner** – An end to end travel planning agent that combines structured data, weather APIs and an LLM to build coherent, weather‑aware itineraries. See [Travel planner/](Travel%20planner/) for notebooks and details.
+* **ChatGPT based storytelling** – A choose‑your‑own‑adventure‑style story project built with ChatGPT. Readers follow a team of heroes through a fantasy world and make decisions that lead to different story paths. See [chatgpt_storytelling/](chatgpt_storytelling/) for the interactive story and write up.
+* **Personal expense tracker** – A simple command line tool to log daily expenses, set a monthly budget and track spending against it. Expenses are persisted to a CSV file. See [expense_tracker/personal_expense_tracker.py](expense_tracker/personal_expense_tracker.py) for details and usage.
 
 ---
 
@@ -24,15 +24,15 @@ The `Travel planner/rag.ipynb` notebook demonstrates how to retrieve the most re
 
 ### Tool calling with large language models
 
-The notebook `Travel planner/agent.ipynb` shows how to wrap the retrieval logic in a tool and invoke it from an LLM. It uses the OpenAI function‑calling API to let the model decide when to call `trip_planner` and how to use the returned results. The agent then produces a formatted itinerary that includes flights, hotel and daily activities. This example highlights how LLMs can orchestrate data retrieval and reasoning via external tools.
+The notebook `Travel planner/agent.ipynb` shows how to wrap the retrieval logic in a tool and invoke it from an LLM. It uses the OpenAI function calling API to let the model decide when to call `trip_planner` and how to use the returned results. The agent then produces a formatted itinerary that includes flights, hotel and daily activities. This example highlights how LLMs can orchestrate data retrieval and reasoning via external tools.
 
 ### Weather‑aware agent
 
-In `Travel planner/weather_agent.ipynb` the itinerary is further improved by consulting real‑time weather data. The notebook uses the geographical coordinates for each activity and queries a weather API for the forecast on the target dates. It then adjusts the plan—swapping indoor and outdoor activities, redistributing events across days and suggesting alternative locations—to ensure that travellers have the best possible experience.
+In `Travel planner/weather_agent.ipynb` the itinerary is further improved by consulting real time weather data. The notebook uses the geographical coordinates for each activity and queries a weather API for the forecast on the target dates. It then adjusts the plan swapping indoor and outdoor activities, redistributing events across days and suggesting alternative locations, to ensure that travellers have the best possible experience.
 
 ## ChatGPT‑based storytelling
 
-The `chatgpt_storytelling` folder contains a choose‑your‑own‑adventure narrative set in the fantasy realm of **Eldoria**. A party of heroes—**Aria** the ranger, **Finn** the mage and **Nyx** the rogue—explore enchanted forests, ancient ruins and treacherous dungeons. At key junctures the reader must choose between different paths, and each decision leads to a unique story branch. The interactive story is written entirely by ChatGPT without any additional code.
+The `chatgpt_storytelling` folder contains a choose‑your‑own‑adventure narrative set in the fantasy realm of **Eldoria**. A party of heroes—**Aria** the ranger, **Finn** the mage and **Nyx** the rogue explore enchanted forests, ancient ruins and treacherous dungeons. At key junctures the reader must choose between different paths, and each decision leads to a unique story branch. The interactive story is written entirely by ChatGPT without any additional code.
 
 Important files include:
 * `interactive_story.md` – The markdown version of the story with branching options.
@@ -80,7 +80,7 @@ Run the notebooks in Jupyter or VS Code and follow the instructions in each cell
 
 ### Storytelling setup
 
-The storytelling project doesn’t require any special setup—just open the markdown or Word file and read along. If you want to generate your own choose‑your‑own‑adventure stories, you can adapt the structure described in the README.
+The storytelling project doesn’t require any special setup, just open the markdown or Word file and read along. If you want to generate your own choose‑your‑own‑adventure stories, you can adapt the structure described in the README.
 
 ### Expense tracker setup
 
@@ -96,4 +96,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## Acknowledgements
 
-Thanks to the developers of the open‑source libraries used in these demos, including pandas, scikit‑learn, sentence‑transformers and OpenAI’s APIs. The choose‑your‑own‑adventure story was created using ChatGPT.
+Thanks to the developers of the open source libraries used in these demos, including pandas, scikit learn, sentence transformers and OpenAI’s APIs. The choose‑your‑own‑adventure story was created using ChatGPT.
