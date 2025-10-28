@@ -52,8 +52,38 @@ Folder: [`expense_tracker/`](./expense_tracker)
 ---
 
 ## 🚀 Quick Start
+
 ```bash
 git clone https://github.com/tinatsou/TinaAI.git
 cd TinaAI/ai-agent-platform
 pip install -r requirements.txt
 python backend/api.py
+
+```
+## 🤝 Collaboration
+
+This repository welcomes contributions from developers, researchers, and open-source communities.
+Focus areas include:
+
+🧑‍💻 AI for Developers (AI4D)
+
+🌐 Edge AI & Distributed Cloud
+
+🤝 Federated Learning
+
+🔐 Privacy Enhancing Technologies (PETs)
+
+---
+
+## 📜 License
+
+This project is open source under the MIT License.
+
+---
+
+## 👩‍💼 Maintainer
+
+**Tina Tsou**  
+Chair, **LF Edge – InfiniEdge AI**  
+TSC Member, **LF AI & Data – OPEA**  
+👉 [LinkedIn Profile →](https://www.linkedin.com/in/ting-zou-tina-tsou-5834504/)
