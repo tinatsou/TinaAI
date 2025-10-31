@@ -11,7 +11,7 @@ TinaAI is a sandbox that brings together multiple AI driven experiments explorin
 ### 🧠 AI Agent Platform
 **Edge & Open Source Focus**  
 Integrates **LlamaIndex** with edge AI components to enable retrieval augmented workflows and robotic/voice interfaces.  
-Includes backend APIs, data orchestration, and distributed cloud support for open-source ecosystems.
+Includes backend APIs, data orchestration, and distributed cloud support for open source ecosystems.
 
 Folder: [`ai-agent-platform/`](./ai-agent-platform)
 
